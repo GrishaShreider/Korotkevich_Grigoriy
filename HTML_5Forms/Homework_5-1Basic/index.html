@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width="700px">
+    <tr><pre><h3>Простая форма поиска с вариантами:        Простая форма поиска с вариантами:</h3></pre>
+                <td><a>Строка поиска</a>
+                <form action="http://fe.it-academy.by/TestForm.php" name="hjh" method="post">
+                  <input type="text">
+                  <input type="submit" value="искать"><br>
+                  <label>
+                     <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked>на сайте
+                 </label>
+                 <label>
+                    <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0">в google<br>
+                   <i>Длина запроса не более 10 символов</i>
+                 </label></form> 
+                </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" name="hjh2" method="post">
+                <input type="text"><a>*</a>
+                <input type="submit" value="искать"><br>
+                <label>
+                   <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked>на сайте
+               </label>
+               <label>
+                  <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0">в google<br>
+                <i>
+                * - обязательное поле<br>
+                Автофокус в поле поиска
+                </i>
+               </label></form>
+            </td>
+        <tr>
+        <tr>  
+
+        </table>
+        <table border="1" width="700px">
+            <tr><pre><h3>Простая форма авторизации:               Опрос(голосование):</h3></pre>
+                <td><a>Авторизируйтесь</a>
+                    <form action="http://fe.it-academy.by/TestForm.php" name="hjh2" method="post">
+                        <input type="text" > <a>*Логин</a><br>
+                        <input type="text" > <a>*Пароль</a><br>
+                        <label>  
+                            <input type="checkbox" name="выфвфв" id="chbox1" checked>  Оставаться в системе<br>
+                        </label>
+                        <input type="submit" value="Войти"><br>
+                        <a>* - обязательное поле</a>
+                    </td>
+                <td><a>Как вам?</a><br>
+                <form action="http://fe.it-academy.by/TestForm.php" name="hjh2" method="post">
+                <label>
+                    <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked>ничего<br>
+                </label>
+                <label>
+                    <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked>не плохо<br>
+                </label>
+                <label>
+                    <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked>хорошо<br>
+                </label>
+                <label>
+                    <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked>супер<br>
+                </label>
+                <input type="submit" value="Отправить"><br>
+                <a><i>Есть скрытое поле</i></a><br>
+                <code>name=date_voite, value="2013.12.31"</code>
+                </td> 
+            </tr>
+       </table>
+       <table border="1" width="700px">
+       <tr><pre><h3>Отзыв:            Выпадающий и мульти списки:</h3></pre>
+        <td><a>Оставьте Ваш отзыв</a><br>
+            <form action="http://fe.it-academy.by/TestForm.php" name="hjh2" method="post">
+                <input type="text" > <a>*Имя</a><br>
+                <input type="text" > <a>*e-mail</a><br>
+                <textarea name="text_area” lang="ru">текст отправки</textarea><br>
+                <input type="submit" value="Отправить"><br>
+                <p><i>* - обязательное поле<br>
+                    поле email - с проверкой<br>
+                    метод POST</i></p>
+            </td>
+            <td><a>Города РБ</a><br>
+                
+
+                <select name="list" id="list">
+                    <optgroup label="Города РБ">
+                          <option value="1">Брест</option>
+                          <option value="2">Минск</option>
+                          <option value="3">Витебск</option>
+                    </optgroup>
+                    <optgroup label="Города России">
+                          <option value="4">Москва</option>
+                          <option value="5">Рязань</option>
+                          <option value="6">Магадан</option>
+                    </optgroup>
+                    </select>
+                    
+
+            </td>
+
+       </tr>
+       </table>
+
+
+          
+       
+       
+  
+</body>
+</html>
