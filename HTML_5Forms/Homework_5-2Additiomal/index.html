@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1  align ="center">Заполните анкету</h1>
+    <table border="1" width="1100px">
+        <form action="http://fe.it-academy.by/TestForm.php" name="anketa" method="post">
+        <tr>
+            <td>
+                <a>Личные данные</a><br>
+                <input type="text" autofocus placeholder="Фамилия" pattern="^[А-Я][а-я]{25}"><a>text:Только кирилица,без пробелов,длина поля 25,обязательное поле,автофокус на данном поле)</a><br>
+                <input type="text" placeholder="Имя" pattern="^[А-Я][а-я]{20}" ><a>text:Только кирилица,без пробелов,длина поля 20,обязательное поле)</a><br>
+                <input type="text" placeholder="Отчество" pattern="^[А-Я][а-я]{20}"><a>text:Только кирилица,без пробелов,длина поля 24,обязательное поле)</a><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>Поспортные данные</a>
+                <p>text:Серия-только заглавные две латинские буквы с длинной 2 и максимальным количеством символов 2,количество букв не менее 2,обязательное поле<br>
+                text:Номер паспорта - только цифры с длинной 7 и максимальным количеством символов 7,количество символов 7,количество цифр не менее 7,обязательное поле<br></p>
+                <input size="2" pattern="[A-Z]{2}"> <input size="7" pattern="[0-9]{7}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>Дата рождения</a><br>
+            <input size="7" pattern="[0-9]{4}"><a>text:Год рождения 4-е цифры</a><br>
+            <select name="list" id="list">
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентяброб</option>
+                <option value="10">Октяборь</option>
+                <option value="11">Нояборь</option>
+                <option value="12">Декабрь</option>
+                <option value="11" selected>Месяца</option>
+                </select><a>select:Месяц рождения</a><br>
+                <input size="7" pattern="[1-31]" required step="1" ><a>number:Диапазон от 1 до 31 с шагои 1</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select name="list" id="list">
+                    <option value="1">РФ</option>
+                    <option value="0">РБ</option>
+                </select><a>(Национальность-выбор одного значения из списка,обязательное поле)</a><br>
+                <a>Адрес:</a><br>
+                <textarea name="text_area"lang=“ru”></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>array:Хобби</a><br>
+                <label>
+                    <input type="checkbox" name="hobby[]">Рыбалка
+               </label><br>
+               <label>
+                    <input type="checkbox" name="hobby[]">Астрономия
+               </label><br>
+               <label>
+                     <input type="checkbox" name="hobby[]">Дайвинг
+               </label><br>
+               <label>
+                <input type="checkbox" name="hobby[]">Марки
+           </label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>Домашние животные(возможность выбора нескольких вариантов):</a><br>
+                <a>array:select multiple</a><br>
+                <select size="12" name="list" id="list">
+                    <optgroup label="Попугаи">
+                          <option value="1">Волнистый</option>
+                          <option value="2">Ара</option>
+                          <option value="3">Неразлучник</option>
+                    </optgroup>
+                    <optgroup label="Рыбы">
+                          <option value="1">Караси</option>
+                          <option value="2">Окуни</option>
+                          <option value="3">Осётр</option>
+                    </optgroup>
+                    <optgroup label="Птицы">
+                        <option value="1">Стая ворон</option>
+                        <option value="2">Аист</option>
+                        <option value="3">Археоптерикс</option>
+                  </optgroup>
+                    </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>Данные для входа и востановления пароля</a><br>
+                <label for=“login”></label>
+                <input TYPE="text" ID="login" NAME="login" AUTOFOCUS  placeholder="Логин" pattern="[A-Za-z]{6,}"><a>text:Только латиница,без пробелов,не менее 5 символов,длинна поля 20,обзательное поле)</a><br>
+                <label for=“pass”></label>
+                <input TYPE="password" ID="pass" NAME="password"  placeholder="Пароль" pattern="[A-Za-z]{10,}"><a>password:Только латиница,без пробелов,не менее 10 символов,длинна поля 20,обзательное поле,откючить</a><br>
+                <a>атозаполнение</a><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>Координаты:</a><br>
+                <input type="email" name="email" placeholder="Введите адрес почты" required><a>email:проверка должна осуществляться при помощи новых отрибутов тега &#60;input &#62;) </a><br>
+                <input type="text" name="text" placeholder="Введите адрес сайта" required> <a>url:проверка должна осуществляться при помощи новых отрибутов тега &#60;input &#62; </a><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>Цифры</a><br>
+                <input size="7" pattern="[-2.5-2.5]" required step="0.1" ><a>number:Диапазон от -2.5 до 2.5 с шагом 0.1</a><br>
+                <input type="range" min="1" max="10"><a>range:Максимальное 10 минимльное 1</a><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>Кнопки упровления</a><br>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Сбросить"><br>
+                <input type="image" src="gifs-in-email.gif">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
