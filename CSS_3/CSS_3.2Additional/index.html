@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .side{
+            width: 150px;
+            margin: 20px;
+        }
+        .menu a{
+            background-color: rgb(14, 19, 9);
+            color: rgb(11, 143, 88);
+            padding: 10px;
+            display:block;
+            border-bottom:1px solid rgb(35, 48, 25);
+            transition:1s all;
+        }
+        .menu a:hover{
+            background-color: #666;
+            padding: 10px 1px 20px;
+        }
+        .menu__list{
+            position: relative;
+        }
+        .menu_drop{
+            position: absolute;
+            width: 0;
+            left: 100%;
+            opacity: 0;
+            top:0;
+        }
+        .menu__list:hover .menu_drop{
+            opacity: 1;
+            transition: 4s;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="side">
+        <ul class="menu">
+            <li><a href="#">Понедельник</a></li>
+            <li><a href="#">Вторник</a></li>
+            <li class="menu__list"><a href="#">Среда</a>
+                <ul class="menu_drop">
+                    <li><a href="#">Завтрак</a></li>
+                    <li><a href="#">Обед</a></li>
+                    <li><a href="#">Ужин</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Четверг</a></li>
+            <li><a href="#">Пятница</a></li>   
+            <li><a href="#">Суббота</a></li>
+            <li><a href="#">Воскресенье</a></li>
+        </ul>
+        
+
+
+    </div>
+</body>
+</html>
