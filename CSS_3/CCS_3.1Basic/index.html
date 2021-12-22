@@ -52,23 +52,25 @@
         }
         @media all and (max-width:739px)
         {
-            .menu--vert
-            {
+            .menu--vert {
                 flex-direction: column;
                 width: 290px;
             }
-        }        
-
+            .menu--vert.submenu{
+                top:0px;
+                left: 100%;  
+            }         
+        }    
 
     </style>
 </head>
 <body>
-    <div class="menu">
+    <div class="submenu">
         <ul class="a">
             <li><a href="#">Понедельник</a></li>
             <li><a href="#">Вторник</a></li>
-            <li class="a"><a href="#">Среда</a>
-                <ul class="MenuLevel2">
+            <li ><a href="#">Среда</a>
+                <ul class="menu__list">
                     <li><a href="#">Завтрак</a></li>
                     <li><a href="#">Обед</a></li>
                     <li><a href="#">Ужин</a></li>
